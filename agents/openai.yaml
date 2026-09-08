@@ -1,0 +1,4 @@
+interface:
+  display_name: "概念图驱动 3D 游戏"
+  short_description: "用生图展开人物多视角与部位细节，结合 Blender 制作并验证游戏画面"
+  default_prompt: "使用 $concept-to-playable-3d，根据我的参考图建立一致的整体与必要局部细节参考，再按本次范围推进人物建模或可玩游戏并验证结果。"
