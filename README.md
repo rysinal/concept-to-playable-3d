@@ -6,7 +6,27 @@
 
 ## 安装
 
-将本仓库完整放入 Codex 的技能目录，保留 `SKILL.md`、`agents/`、`references/` 和第三方许可文件。例如，目标目录尚不存在时：
+推荐使用 [skills CLI](https://github.com/vercel-labs/skills) 安装，需要本机已有 Node.js/npm 和 Git：
+
+```bash
+npx skills add rysinal/concept-to-playable-3d
+```
+
+按提示选择目标工具和安装范围。只安装到 Codex 并跨项目使用：
+
+```bash
+npx skills add rysinal/concept-to-playable-3d --skill concept-to-playable-3d --agent codex --global
+```
+
+省略 `--global` 则安装到当前项目。先查看仓库中可安装的 skill，可运行：
+
+```bash
+npx skills add rysinal/concept-to-playable-3d --list
+```
+
+本仓库根目录直接包含 `SKILL.md`，CLI 会同时安装所需的 `agents/`、`references/` 和第三方许可文件，无需单独发布 npm 包。安装的是制作流程；Blender、MCP 和生图工具仍需按下文检查配置。
+
+也可手动安装，目标目录尚不存在时：
 
 ```bash
 git clone https://github.com/rysinal/concept-to-playable-3d.git \
